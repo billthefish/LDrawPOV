@@ -116,14 +116,15 @@
     }    
   }     
 
-#declare axlehol4_dot_dat = merge {
-                              intersection {
-                                cylinder {<0,0,0>,<0,1,0>,6}
-                                merge {
-                                  box {<-2,-1,2>,<-6,2,6>}
-                                  box {<2,-1,2>,<6,2,6>}
-                                  box {<-2,-1,-2>,<-6,2,-6>}
-                                  box {<2,-1,-2>,<6,2,-6>}
+#declare axlehol4_dot_dat = 
+  merge {
+    intersection {
+      cylinder {<0,0,0>,<0,1,0>,6}
+      merge {
+        box {<-2,-1,2>,<-6,2,6>}
+        box {<2,-1,2>,<6,2,6>}
+        box {<-2,-1,-2>,<-6,2,-6>}
+        box {<2,-1,-2>,<6,2,-6>}
                                 }  
                               }
                               cylinder {
