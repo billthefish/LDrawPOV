@@ -4,8 +4,12 @@
 
 #include "primitives.inc"
 
+#ifndef (_4740_dot_dat)
 #declare _4740_dot_dat =
+  #if (L3Quality)
+  #if (L3Studs)
   merge {
+  #end
     difference {
       intersection {
         difference {
@@ -25,7 +29,8 @@
         cylinder { <0, -2, 0>, <0, 18, 0>, 20 }       
       }
       cylinder { <0,-1,0>, <0,5,0>, 4 }
-    }  
+    }
+  #if (L3Studs)  
     object {
       stud2_dot_dat
     }
@@ -34,5 +39,9 @@
       rotate x*180
       translate <0,4,0>
     }
-  }  
-         
+  }
+  #end
+  #else
+  box { <20,0,20>, <-20,8,-20> }
+  #end  
+#end         
