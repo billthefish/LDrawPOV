@@ -4,7 +4,9 @@
 
 #include "primitives.inc"
 
+#ifndef (_3713_dot_dat)
 #declare _3713_dot_dat =
+  #if (L3Quality)
   difference {
     merge {
       cylinder { <0,0,10>, <0,0,-10>, 7 }
@@ -24,4 +26,8 @@
     cylinder { <-10,-10,6>,  <-10,-10,11> , 6 }
     cylinder { <10,-10,6>,  <10,-10,11> , 6 }
     cylinder { <10,10,6>,  <10,10,11> , 6 }
-  }     
+  }
+  #else
+  box { <-7,-7,10>, <7,7,-10> }
+  #end     
+#end
