@@ -61,8 +61,8 @@ object {
       #end   
     #end 
     
-    translate <-BrickWidth/2,0,-BrickDepth/2>      
   #end
+    translate <-BrickWidth/2,0,-BrickDepth/2>      
   }
 #else
   box {<-BrickWidth/2,0,-BrickDepth/2>, <BrickWidth/2,24,BrickDepth/2>}
@@ -128,8 +128,8 @@ object {
       #end   
     #end 
     
-    translate <-BrickWidth/2,0,-BrickDepth/2>      
   #end
+    translate <-BrickWidth/2,0,-BrickDepth/2>      
   }
 #else
   box {<-BrickWidth/2,0,-BrickDepth/2>, <BrickWidth/2,8,BrickDepth/2>}

@@ -104,26 +104,14 @@
 
 
 #declare axlehole_dot_dat = 
-  merge {
-    intersection {
-      cylinder {<0,0,0>,<0,1,0>,6}
-      merge {
-        box {<-2,-1,2>,<-6,2,6>}
-        box {<2,-1,2>,<6,2,6>}
-        box {<-2,-1,-2>,<-6,2,-6>}
-        box {<2,-1,-2>,<6,2,-6>}
-      }  
+  union {
+    cylinder { <0,0,0>, <0,1,0>, 6 open }
+    difference {
+      cylinder { <0,0,0>, <0,1,0>, 6 }
+      intersection { plane { -x, 2 } plane { x, 2 } }
+      intersection { plane { -z, 2 } plane { z, 2 } }
     }
-    cylinder {
-      <0,0,0>,<0,1,0>,6 open
-      clipped_by {
-        merge {
-          box {<-7,-1,2>,<7,2,-2>}
-          box {<2,-1,-7>,<-2,2,7>}
-        }  
-      }
-    }    
-  }     
+  }
 
 #declare axlehol4_dot_dat = 
   merge {
