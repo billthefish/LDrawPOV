@@ -3,7 +3,7 @@
 // DAT Author: James Jessiman
 
 #include "primitives.inc"
-#include "lugnetcolors.inc"
+//#include "lugnetcolors.inc"
 
 #declare _4746_dot_dat =
 /*  merge {
@@ -40,10 +40,10 @@
           plane { x,0 rotate y*190.062  translate <14,0,36> }
           plane { x,0 rotate y*-10.062  translate <-14,0,36> }
 
-          plane { x,0 rotate z*125.272 rotate y*10.062 translate <14,12.87,36> }
+//          plane { x,0 rotate z*125.272 rotate y*10.062 translate <14,12.87,36> }
           plane { x,0 rotate z*215.272 rotate y*10.062 translate <14,27.13,36> }
 
-          plane { x,0 rotate z*35.272 rotate y*-10.062 translate <-14,12.87,36> }
+//          plane { x,0 rotate z*35.272 rotate y*-10.062 translate <-14,12.87,36> }
           plane { x,0 rotate z*305.272 rotate y*-10.062 translate <-14,27.13,36> }
       } /*
       //Side cuts
