@@ -4,7 +4,9 @@
 
 #include "primitives.inc"
 
+#ifndef (_3960_dot_dat)
 #declare _3960_dot_dat =
+  #if (L3Quality)
   merge {
     intersection {
       difference {
@@ -23,9 +25,11 @@
       }                
       cylinder { <0, -2, 0>, <0, 18, 0>, 40 }       
     }
+    #if (L3Studs)
     object {
       stud_dot_dat
     }
+    #end
     difference {
       merge {
         cylinder { <0,4,0>, <0,11,0>, 10 }
@@ -38,4 +42,8 @@
       scale <0,8,0>
       translate <0,4,0>
     }         
-  }    
+  }
+  #else
+  box { <-40,0,-40>,<40,16,40> }
+  #end
+#end      

@@ -2,6 +2,8 @@
 // Author: Orion Pobursky
 // DAT Author: James Jessiman
 
+#include "primitives.inc"
+
 #declare _4588_dot_dat_fin =
   difference {
     box { <-20,0,2>, <-8,24,-2> }

@@ -2,7 +2,11 @@
 // Author: Orion Pobursky
 // DAT Author: James Jessiman
 
+#include "primitives.inc"
+
+#ifndef (_298_dot_dat)
 #declare _298_dot_dat =
+  #if (L3Quality)
   merge {
     difference {
       cylinder { <0,8,0>, <0,2,0>, 8 }
@@ -26,3 +30,7 @@
       plane { -y,-2 }
     }
   }
+  #else
+  box { <-8,8,-8>,<8,-6,8> }
+  #end
+#end

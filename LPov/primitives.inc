@@ -1,6 +1,15 @@
 // P Folder
 // Author: Orion Pobursky
 
+//L3P Compatibility Declares
+#ifndef (L3Quality)
+#declare L3Quality = 2;
+#end
+
+#ifndef (L3Studs)
+#declare L3Studs = 1;
+#end
+
 // Studs
 #declare stud_dot_dat = 
   cylinder { <0,0,0>,  <0,-4,0> , 6 }

@@ -1,12 +1,12 @@
-// 3005 - Brick  1 x  1
+// 3004 - Brick  1 x  2
 // Author: Orion Pobursky
 // DAT Author: James Jessiman
 
 #include "macros.inc"
 
-#ifndef (_3005_dot_dat)
-#declare _3005_dot_dat =
+#ifndef (_3004_dot_dat)
+#declare _3004_dot_dat =
   object {
-    MakeBrick(20,20)
+    MakeBrick(40,20)
   }
 #end
