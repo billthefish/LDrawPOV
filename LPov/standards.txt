@@ -8,3 +8,7 @@ LDraw - POV Library standards
 - All files will include either primitives.inc or macros.inc
 
 - Objects must be built from solid primitives (i.e. no meshes)
+
+- The goal is to be compatible with L3P.  However, all files must able to be
+  rendered outside of an L3P generated file.  This means that any L3P declares
+  that are used must be defined in the primitives.inc file.
