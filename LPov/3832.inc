@@ -7,6 +7,6 @@
 #ifndef (_3832_dot_dat)
 #declare _3832_dot_dat =
   object {
-    MakePlate(200,40)
+    MakePlate(10,2)
   }
 #end

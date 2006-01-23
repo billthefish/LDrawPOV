@@ -3,8 +3,16 @@
 
 #include "primitives.inc"
 
-#macro MakeBrick(BrickWidth, BrickDepth)
+#macro MakeBrick(BW, BD)
 
+#if (BW < BD)
+  #local BrickWidth = BD*20;
+  #local BrickDepth = BW*20;
+#else  
+  #local BrickWidth = BW*20;
+  #local BrickDepth = BD*20;
+#end
+  
 object {
 #if (L3Quality)
   union {
@@ -72,7 +80,15 @@ object {
 
 #end
 
-#macro MakePlate(BrickWidth, BrickDepth)
+#macro MakePlate(BW, BD)
+
+#if (BW < BD)
+  #local BrickWidth = BD*20;
+  #local BrickDepth = BW*20;
+#else  
+  #local BrickWidth = BW*20;
+  #local BrickDepth = BD*20;
+#end
 
 object {
 #if (L3Quality)
@@ -138,7 +154,15 @@ object {
 
 #end
 
-#macro MakeTile(BrickWidth, BrickDepth, Groove)
+#macro MakeTile(BW, BD, Groove)
+
+#if (BW < BD)
+  #local BrickWidth = BD*20;
+  #local BrickDepth = BW*20;
+#else  
+  #local BrickWidth = BW*20;
+  #local BrickDepth = BD*20;
+#end
 
 object {
 #if (L3Quality)
@@ -185,7 +209,9 @@ object {
 
 #end
 
-#macro MakeTechnicBrick(BrickLength)
+#macro MakeTechnicBrick(BL)
+
+#local BrickLength = BL*20;
 
 object {
 #if (L3Quality)
