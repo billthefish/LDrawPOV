@@ -10,7 +10,7 @@
 #declare L3Studs = 1;
 #end
 
-//This code derived from code by Lars C. Hassing as part of the L3P programs
+//This code derived from code by Lars C. Hassing as part of the L3P program
 #declare L3Logo = 
 
 merge {
