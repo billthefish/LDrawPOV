@@ -1,4 +1,4 @@
-// 3039 - Slope Brick 45  2 x  2
+// 3036 - Plate  6 x  8
 // Author: Orion Pobursky
 // DAT Author: James Jessiman
 
@@ -7,12 +7,6 @@
 #ifndef (_3036_dot_dat)
 #declare _3036_dot_dat =
   object {
-    difference {
-      box { <-20,0,10> , <20,24,-30> }
-      plane { y, 0 
-              rotate x*45
-              translate z*-10
-            }  
-      
+    MakePlate(6,8)
   }
 #end

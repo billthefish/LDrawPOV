@@ -859,3 +859,45 @@ material {
   #end
 }
 #end
+
+// Trans Black
+#ifndef (Color32)
+#declare Color32 = 
+material {
+  #if (COLOR_DEFS)
+    MakeColor(191/255, 183/255, 177/255,TRANS_MAT,0)
+  #else
+    MakeColor(0.08, 0.0135, 0,TRANS_MAT,0)
+  #end
+}
+
+#declare Color32_slope = 
+material {
+  #if (COLOR_DEFS)
+    MakeColor(191/255, 183/255, 177/255,TRANS_MAT,1)
+  #else
+    MakeColor(0.08, 0.0135, 0,TRANS_MAT,1)
+  #end
+}
+#end
+
+// Trans Brown, same as Trans Black
+#ifndef (Color40)
+#declare Color40 = 
+material {
+  #if (COLOR_DEFS)
+    MakeColor(191/255, 183/255, 177/255,TRANS_MAT,0)
+  #else
+    MakeColor(0.08, 0.0135, 0,TRANS_MAT,0)
+  #end
+}
+
+#declare Color40_slope = 
+material {
+  #if (COLOR_DEFS)
+    MakeColor(191/255, 183/255, 177/255,TRANS_MAT,1)
+  #else
+    MakeColor(0.08, 0.0135, 0,TRANS_MAT,1)
+  #end
+}
+#end

@@ -10,7 +10,7 @@
   merge {
     difference {
       object {
-        MakePlate(40,20)
+        MakePlate(1,2)
       }
       box { <16,4,-10.01>, <12,8.01,-5.99> }
       box { <-16,4,-10.01>, <-12,8.01,-5.99> }
