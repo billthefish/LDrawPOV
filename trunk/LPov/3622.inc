@@ -7,6 +7,6 @@
 #ifndef (_3622_dot_dat)
 #declare _3622_dot_dat =
   object {
-    MakeBrick(3,1)
+    MakeBrick(1,3)
   }
 #end

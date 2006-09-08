@@ -281,7 +281,7 @@ merge {
 */
 
 //Connects
-#ifdef (connect_dot_dat)
+#ifndef (connect_dot_dat)
 #declare connect_dot_dat = 
   difference {
     merge {
@@ -294,7 +294,7 @@ merge {
   }
 #end
                       
-#ifdef (connect2_dot_dat)
+#ifndef (connect2_dot_dat)
 #declare connect2_dot_dat = 
   difference {
     merge {
@@ -306,7 +306,7 @@ merge {
   }
 #end
                       
-#ifdef (connect3_dot_dat)
+#ifndef (connect3_dot_dat)
 #declare connect3_dot_dat = 
   difference {
     merge {
@@ -319,7 +319,7 @@ merge {
   }
 #end
                       
-#ifdef (connect4_dot_dat)
+#ifndef (connect4_dot_dat)
 #declare connect4_dot_dat = 
   difference {
     merge {
@@ -331,7 +331,7 @@ merge {
   }
 #end
 
-#ifdef (connect5_dot_dat)
+#ifndef (connect5_dot_dat)
 #declare connect5_dot_dat = 
   difference {
     merge {

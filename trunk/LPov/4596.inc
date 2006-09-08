@@ -9,9 +9,9 @@
   #if (L3Quality)
   merge {
   
-    object {
-      MakePlate(40,20)
-    }
+    //object {
+    //  MakePlate(40,20)
+    //}
     
     difference {
       box { <20,0,-62>, <-20,8,-10> }

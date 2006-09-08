@@ -40,7 +40,7 @@
       rotate -y*90
     }
     object {
-      MakeBrick(20,20)
+      MakeBrick(1,1)
     }
     #if (L3Studs)
     object {
