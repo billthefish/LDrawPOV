@@ -4,9 +4,11 @@ LDraw Design Pad
 LDraw - POV Library standards
 
 - All files will carry a standard header:
+```
 // <LDraw Part Number> - <Ldraw Part Name>
 // Author: <POV Code Author>
 // DAT Author: <LDraw Part Author>
+```
 
 - All files will include either primitives.inc or macros.inc
 
